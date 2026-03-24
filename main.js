@@ -7,6 +7,10 @@ console.log("it works");
 
 //Creo un array di oggetti
 const bikes=[
+    {
+        name:"EEEE",
+        weight: 20
+    },
     
     {
         name:"AAAA",
@@ -16,11 +20,6 @@ const bikes=[
     {
         name:"BBBB",
         weight: 24
-    },
-
-    {
-        name:"EEEE",
-        weight: 20
     },
    
     {
@@ -53,7 +52,7 @@ let x=0;
 let minWeight= bikes[x]["weight"];
 
 //ciclo FOR per scorrere gli oggetti dell'array
-for (let i=0; i<bikes.length; i++){
+for (let i=1; i<bikes.length; i++){
    //confronto il peso dell'oggetto con il valore di minWeight
    if(bikes[i]["weight"] < minWeight){
     //aggiorno minWeight
